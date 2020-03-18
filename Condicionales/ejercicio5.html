@@ -1,0 +1,49 @@
+<!--EJERCICIO 5
+Notificaciones arcoiris
+Crea un div que contenga un título "NOTIFICACIÓN" y un texto "Mensaje por defecto". Crea también tres clases:
+La primera, .success, aplicará un borde verde oscuro, un fondo verde claro y el color de fuente verde oscuro
+La segunda, .error, igual pero sustituyendo el verde por rojo
+La tercera, .warning, lo mismo pero usando el color amarillo
+Usando JavaScript, haremos que:
+Si contiene la clase warning, el título sea 'AVISO' y el texto sea: 'Tenga cuidado'
+Si contiene la clase error, el título sea 'ERROR' y el texto sea: 'Ha surgido un error'
+Si contiene la clase success, el título sea 'CORRECTO' y el texto sea: 'Los datos son correctos'
+Cambia la clase en HTML y comprueba que el código de JavaScript funciona.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Cinco</title>
+</head>
+
+<body>
+    <style>
+        .success {
+            background-color: rgba(106, 27, 170, 0.705);
+            color: rgb(140, 127, 179);
+            border: rgb(97, 148, 30);
+        }
+        
+        .error {
+            background-color: rgba(161, 29, 29, 0.212);
+            color: rgb(16, 82, 67);
+            border: rgb(14, 8, 8);
+        }
+        
+        .warning {
+            background-color: rgba(14, 3, 8, 0.5);
+            color: rgb(39, 11, 70);
+            border: rgb(146, 136, 27);
+        }
+    </style>
+    <div class="warning" id="casos">
+        <h1>NOTIFICACIÓN</h1>
+        <p>Mensaje por defecto</p>
+    </div>
+    <script type="text/javascript" src="ejercicio5.js"></script>
+
+</body>
+
+</html>
